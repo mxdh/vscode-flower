@@ -1,6 +1,6 @@
 # 野花鼓励师
 
-forked form 
+forked form [formulahendry/vscode-ycy](https://github.com/formulahendry/vscode-ycy)
 
 在 VS Code 中连续不写代码30分钟（时间可配置），会有野花提醒你别颓啦~
 

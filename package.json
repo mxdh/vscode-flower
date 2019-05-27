@@ -2,7 +2,7 @@
     "name": "flower",
     "displayName": "野花鼓励师",
     "description": "写代码不再孤单，有野花与你同在",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "mxdh",
     "icon": "logo.jpg",
     "engines": {
@@ -45,7 +45,7 @@
                 "flower.reminderViewIntervalInMinutes": {
                     "type": "number",
                     "default": 30,
-                    "description": "展示提醒页面的时间间隔（分钟）"
+                    "description": "展示提醒页面的时间间隔（分钟）（重新加载窗口后起效）"
                 },
                 "flower.title": {
                     "type": "string",
@@ -78,7 +78,7 @@
         "@types/mocha": "^2.2.42",
         "@types/node": "^8.10.48",
         "tslint": "^5.16.0",
-        "typescript": "^2.6.1",
+        "typescript": "^2.9.2",
         "vscode": "^1.1.34"
     }
 }
