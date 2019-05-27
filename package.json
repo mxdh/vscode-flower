@@ -1,9 +1,9 @@
 {
-    "name": "ycy",
-    "displayName": "超越鼓励师",
-    "description": "写代码不再孤单，有杨超越与你同在",
-    "version": "0.1.2",
-    "publisher": "formulahendry",
+    "name": "flower",
+    "displayName": "野花鼓励师",
+    "description": "写代码不再孤单，有野花与你同在",
+    "version": "0.0.1",
+    "publisher": "mxdh",
     "icon": "logo.jpg",
     "engines": {
         "vscode": "^1.30.0"
@@ -12,55 +12,55 @@
         "Other"
     ],
     "keywords": [
-        "杨超越",
+        "野花",
         "提醒",
         "鼓励"
     ],
     "bugs": {
-        "url": "https://github.com/formulahendry/vscode-ycy/issues",
-        "email": "formulahendry@gmail.com"
+        "url": "https://github.com/mxdh/vscode-flower/issues",
+        "email": "a27573@outlook.com"
     },
-    "homepage": "https://github.com/formulahendry/vscode-ycy/blob/master/README.md",
+    "homepage": "https://github.com/mxdh/vscode-flower/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/formulahendry/vscode-ycy.git"
+        "url": "https://github.com/mxdh/vscode-flower.git"
     },
     "activationEvents": [
-        "onCommand:ycy.showReminderView",
+        "onCommand:flower.showReminderView",
         "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "ycy.showReminderView",
+                "command": "flower.showReminderView",
                 "title": "打开提醒页面",
-                "category": "ycy"
+                "category": "flower"
             }
         ],
         "configuration": {
             "type": "object",
-            "title": "杨超越",
+            "title": "野花",
             "properties": {
-                "ycy.reminderViewIntervalInMinutes": {
+                "flower.reminderViewIntervalInMinutes": {
                     "type": "number",
-                    "default": 60,
+                    "default": 30,
                     "description": "展示提醒页面的时间间隔（分钟）"
                 },
-                "ycy.title": {
+                "flower.title": {
                     "type": "string",
-                    "default": "小哥哥，小哥哥，代码写久了，该休息啦~",
+                    "default": "又无聊啦？",
                     "description": "页面内展示文字"
                 },
-                "ycy.type": {
+                "flower.type": {
                     "type": "string",
                     "default": "default",
                     "description": "类型：default:默认图；url：网络图"
                 },
-                "ycy.customImages": {
+                "flower.customImages": {
                     "type": "array",
                     "default": [
-                        "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg"
+                        "https://github.io/mxdh/vscode-flower/image/flower/01.jpg"
                     ],
                     "description": "用户设置图片地址"
                 }
@@ -75,10 +75,10 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.48",
+        "tslint": "^5.16.0",
         "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "tslint": "^5.8.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "vscode": "^1.1.34"
     }
 }

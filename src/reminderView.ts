@@ -15,7 +15,7 @@ export class ReminderView {
             this.panel.webview.html = this.generateHtml(imagePath, title);
             this.panel.reveal();
         } else {
-            this.panel = vscode.window.createWebviewPanel("ycy", "杨超越", vscode.ViewColumn.Two, {
+            this.panel = vscode.window.createWebviewPanel("flower", "野花", vscode.ViewColumn.Two, {
                 enableScripts: true,
                 retainContextWhenHidden: true,
             });
@@ -26,13 +26,13 @@ export class ReminderView {
         }
     }
 
-    protected static generateHtml(imagePath: vscode.Uri|string, title: string): string {
+    protected static generateHtml(imagePath: vscode.Uri | string, title: string): string {
         let html = `<!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>杨超越</title>
+            <title>野花</title>
         </head>
         <body>
             <div><h1>${title}</h1></div>

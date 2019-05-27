@@ -7,7 +7,12 @@ export function activate(context: vscode.ExtensionContext) {
     const scheduler = new Scheduler(context);
     scheduler.start();
 
-    context.subscriptions.push(vscode.commands.registerCommand('ycy.showReminderView', () => {
+    vscode.workspace.onDidChangeTextDocument(changeEvent => {
+        scheduler.stop();
+        scheduler.start();
+    });
+
+    context.subscriptions.push(vscode.commands.registerCommand('flower.showReminderView', () => {
         ReminderView.show(context);
     }));
 }

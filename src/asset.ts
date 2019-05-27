@@ -34,7 +34,7 @@ export default class Asset {
     }
 
     protected getDefaultImages(): vscode.Uri[] {
-        const dirPath = this.getDefaultYcyImagePath();
+        const dirPath = this.getDefaultFlowerImagePath();
         const files = this.readPathImage(dirPath);
         return files;
     }
@@ -51,8 +51,8 @@ export default class Asset {
         return files;
     }
 
-    protected getDefaultYcyImagePath() {
-        return path.join(this.context.extensionPath, 'images/ycy');
+    protected getDefaultFlowerImagePath() {
+        return path.join(this.context.extensionPath, 'images/flower');
     }
 
 
