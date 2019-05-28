@@ -12,9 +12,10 @@ forked form [formulahendry/vscode-ycy](https://github.com/formulahendry/vscode-y
 
 ## 配置
 
-* `flower.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）。(默认值为**30**)
+* `flower.name`: 窗口标题（默认值为**野花**）
+* `flower.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）(重新加载窗口后起效）。(默认值为**30**)
 * `flower.title`: 提示文字。 (默认值为**又无聊啦？**)
-* `flower.type`: default (默认图)；url (图片地址)。(默认值为**default**)
+* `flower.type`: 指定图片类型：default (默认图)；url (网络图)。(默认值为**default**)
 * `flower.customImages`: 配置图片数组（需要搭配flower.type为url） (默认值为**默认图片**)
 
 ```
