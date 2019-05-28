@@ -59,8 +59,16 @@
                 },
                 "flower.type": {
                     "type": "string",
+                    "enum": [
+                        "default",
+                        "url"
+                    ],
+                    "enumDescriptions": [
+                        "默认图",
+                        "网络图"
+                    ],
                     "default": "default",
-                    "description": "类型：default:默认图；url：网络图"
+                    "description": "指定图片类型"
                 },
                 "flower.customImages": {
                     "type": "array",
