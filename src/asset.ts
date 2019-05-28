@@ -67,4 +67,8 @@ export default class Asset {
     public getTitle(): string {
         return Utility.getConfiguration().get<string>('title', '');
     }
+
+    public getName(): string {
+        return Utility.getConfiguration().get<string>('name', '');
+    }
 }

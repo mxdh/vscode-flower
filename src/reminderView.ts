@@ -10,12 +10,13 @@ export class ReminderView {
 
         const imagePath = asset.getImageUri();
         const title = asset.getTitle();
+        const name = asset.getName();
 
         if (this.panel) {
             this.panel.webview.html = this.generateHtml(imagePath, title);
             this.panel.reveal();
         } else {
-            this.panel = vscode.window.createWebviewPanel("flower", "野花", vscode.ViewColumn.Two, {
+            this.panel = vscode.window.createWebviewPanel("flower", name, vscode.ViewColumn.Two, {
                 enableScripts: true,
                 retainContextWhenHidden: true,
             });
@@ -32,7 +33,6 @@ export class ReminderView {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>野花</title>
         </head>
         <body>
             <div><h1>${title}</h1></div>
